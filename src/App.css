@@ -1,0 +1,74 @@
+.App {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.hour-number {
+    position: absolute;
+    font-size: 16px;
+    color: #333;
+    width: 10%;
+    height: 10%;
+    text-align: center;
+    top: 48%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+}
+
+.clock {
+    position: relative;
+    width: 80vw; /* Adjust width for responsiveness */
+    max-width: 30rem; /* Maximum width */
+    height: 80vw; /* Match height to width for circular shape */
+    max-height: 30rem; /* Maximum height */
+    border-radius: 50%;
+    border: 5px solid #333;
+    background-color: lightgray;
+    color: white;
+}
+
+
+.hand {
+    position: absolute;
+    transform-origin: 50% 100%;
+    top: 50%;
+    left: 50%;
+}
+
+.hour-hand {
+    height: 25%; /* Responsive hand height */
+    background: #000;
+    width: 0.5vw; /* Responsive hand width */
+    margin-left: -0.4vw; /* Responsive margin */
+    margin-top: -25%; /* Responsive margin */
+}
+
+.minute-hand {
+    height: 30%; /* Responsive hand height */
+    background: #efc50b;
+    width: 0.3vw; /* Responsive hand width */
+    margin-left: -0.3vw; /* Responsive margin */
+    margin-top: -30%; /* Responsive margin */
+}
+
+.second-hand {
+    height: 35%; /* Responsive hand height */
+    background: #0727f5;
+    width: 0.1vw; /* Responsive hand width */
+    margin-left: -0.1vw; /* Responsive margin */
+    margin-top: -35%; /* Responsive margin */
+}
+
+
+.center-circle {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background: #333;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
